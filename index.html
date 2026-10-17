@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localizador Geográfico Global</title>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet: librería del mapa visual (usa mosaicos de OpenStreetMap) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌸 Localizador Geográfico Global 🌸</h1>
+    <p>Consumo de la API de OpenStreetMap con control de versiones integral.<br>
+       Por <strong>(Esmeralda Solòrzano)</strong></p>
+  </header>
+
+  <main>
+    <section class="search-container">
+      <input type="text" id="city-input" placeholder="Introduce un lugar (ej. Monterrey, Madrid)..." aria-label="Lugar a buscar">
+      <button id="search-btn">Consultar API</button>
+    </section>
+
+    <section id="weather-card" class="weather-card">
+      <p>Introduce una ubicación para ver sus coordenadas, descripción y clima. ✨</p>
+    </section>
+
+    <!-- AQUÍ SE DIBUJA EL MAPA -->
+    <div id="map" class="map" aria-label="Mapa de la ubicación"></div>
+  </main>
+
+  
+
+  <footer>Hecho con 💗 </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
